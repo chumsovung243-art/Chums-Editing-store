@@ -1,56 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ML Editing Studio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0d0d0d;
-color:white;
-}
-
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-background:#000;
-z-index:1000;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-nav a:hover{
-color:#00ffd5;
-}
-
-header{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#000,#1c1c1c);
-padding:20px;
-}
-
-header
+body{margin:0;font-family:Arial,sans-serif;background:#0b0b0b;color:#fff}
+nav{position:fixed;top:0;width:100%;background:#111;padding:15px;text-align:center}
+nav a{color:#0ff;margin:0 10px;text-decoration:none}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(#000,#222);text-align:center}
+.hero h1{color:#0ff;font-size:3em}
+section{padding:80px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#1a1a1a;padding:20px;border-radius:10px}
+footer{text-align:center;padding:20px;background:#111}
+.btn{display:inline-block;padding:12px 22px;background:#0ff;color:#000;text-decoration:none;border-radius:30px}
+</style></head>
+<body>
+<nav><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav>
+<div class="hero"><h1>ML Editing Studio</h1><p>MLBB • Typography • Birthday • Cinematic • Aesthetic • Commercial Videos</p><a class="btn" href="#services">Explore</a></div>
+<section id="services"><h2>Services</h2><div class="grid">
+<div class="card"><h3>MLBB Editing</h3><p>Gameplay montages and highlights.</p></div>
+<div class="card"><h3>Typography Edits</h3><p>Beat-sync text edits.</p></div>
+<div class="card"><h3>Birthday Edits</h3><p>Personalized celebration videos.</p></div>
+<div class="card"><h3>Cinematic Videos</h3><p>Movie-style edits.</p></div>
+<div class="card"><h3>Aesthetic Videos</h3><p>Smooth reels.</p></div>
+<div class="card"><h3>Commercial Videos</h3><p>Business promotions.</p></div>
+</div></section>
+<section id="portfolio"><h2>Portfolio</h2><p>Add screenshots or videos of your edits here.</p></section>
+<section id="contact"><h2>Contact</h2><p>Instagram: @yourusername<br>Email: your@email.com</p></section>
+<footer>© 2026 ML Editing Studio</footer>
+</body></html>
