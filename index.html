@@ -1,30 +1,290 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Chums Editing Store</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHUMS Editing Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#0b0b0b;color:#fff}
-nav{position:fixed;top:0;width:100%;background:#111;padding:15px;text-align:center}
-nav a{color:#0ff;margin:0 10px;text-decoration:none}
-.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(#000,#222);text-align:center}
-.hero h1{color:#0ff;font-size:3em}
-section{padding:80px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:#1a1a1a;padding:20px;border-radius:10px}
-footer{text-align:center;padding:20px;background:#111}
-.btn{display:inline-block;padding:12px 22px;background:#0ff;color:#000;text-decoration:none;border-radius:30px}
-</style></head>
+  *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.9);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:900;
+color:#00f7ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00f7ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#000,#151515);
+}
+
+.hero h1{
+font-size:60px;
+color:#00f7ff;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 40px;
+background:#00f7ff;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#00f7ff;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1a1a1a;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #00f7ff55;
+}
+
+footer{
+background:#111;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:42px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:10px;
+}
+}
+  </style>
+</head>
+
 <body>
-<nav><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav>
-<div class="hero"><h1>ML Editing Studio</h1><p>MLBB • Typography • Birthday • Cinematic • Aesthetic • Commercial Videos</p><a class="btn" href="#services">Explore</a></div>
-<section id="services"><h2>Services</h2><div class="grid">
-<div class="card"><h3>MLBB Editing</h3><p>Gameplay montages and highlights.</p></div>
-<div class="card"><h3>Typography Edits</h3><p>Beat-sync text edits.</p></div>
-<div class="card"><h3>Birthday Edits</h3><p>Personalized celebration videos.</p></div>
-<div class="card"><h3>Cinematic Videos</h3><p>Movie-style edits.</p></div>
-<div class="card"><h3>Aesthetic Videos</h3><p>Smooth reels.</p></div>
-<div class="card"><h3>Commercial Videos</h3><p>Business promotions.</p></div>
-</div></section>
-<section id="portfolio"><h2>Portfolio</h2><p>Add screenshots or videos of your edits here.</p></section>
-<section id="contact"><h2>Contact</h2><p>Instagram: @yourusername<br>Email: your@email.com</p></section>
-<footer>© 2026 ML Editing Studio</footer>
-</body></html>
+
+<nav>
+<div class="logo">CHUMS Editing Studio</div>
+
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>CHUMS Editing Studio</h1>
+
+<p>
+Professional MLBB, Typography, Birthday, Cinematic,
+Aesthetic & Commercial Video Editing.
+</p>
+
+<a href="#portfolio" class="btn">View Portfolio</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎮 MLBB Editing</h3>
+<p>High-quality gameplay edits with cinematic effects.</p>
+</div>
+
+<div class="card">
+<h3>✍ Typography Editing</h3>
+<p>Beat-sync typography edits for Instagram and TikTok.</p>
+</div>
+
+<div class="card">
+<h3>🎂 Birthday Editing</h3>
+<p>Creative birthday surprise videos and reels.</p>
+</div>
+
+<div class="card">
+<h3>🎬 Cinematic Videos</h3>
+<p>Movie-style editing with smooth transitions.</p>
+</div>
+
+<div class="card">
+<h3>✨ Aesthetic Videos</h3>
+<p>Trending aesthetic edits for social media.</p>
+</div>
+
+<div class="card">
+<h3>💼 Commercial Videos</h3>
+<p>Professional promotional videos for brands.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="section-title">Portfolio</h2>
+
+<div class="grid">
+
+<div class="card">📸 MLBB Montage</div>
+<div class="card">🎥 Typography Reel</div>
+<div class="card">🎂 Birthday Edit</div>
+<div class="card">🎬 Cinematic Video</div>
+<div class="card">🌌 Aesthetic Reel</div>
+<div class="card">💼 Commercial Ad</div>
+
+</div>
+
+</section>
+
+<section id="pricing">
+
+<h2 class="section-title">Pricing</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Basic</h3>
+<p>₹299</p>
+</div>
+
+<div class="card">
+<h3>Standard</h3>
+<p>₹599</p>
+</div>
+
+<div class="card">
+<h3>Premium</h3>
+<p>₹999</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p style="text-align:center;font-size:18px;">
+Instagram: <strong>@YOUR_USERNAME</strong><br><br>
+
+WhatsApp: <strong>+91 XXXXXXXXXX</strong><br><br>
+
+Email: <strong>your@email.com</strong>
+</p>
+
+</section>
+
+<footer>
+
+© 2026 CHUMS Editing Studio. All Rights Reserved.
+
+</footer>
+
+</body>
+
+</html>
